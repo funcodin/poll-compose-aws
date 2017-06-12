@@ -4,7 +4,7 @@ services:
  poll-web:
   depends_on:
    - poll-core
-  image: poll-web 
+  image: pollforfun/poll-web 
   ports:
    - 4200:4200
  poll_db:
@@ -19,6 +19,6 @@ services:
  poll-core:
   depends_on:
    - poll_db
-  image: poll-core 
+  image: pollforfun/poll-core 
   ports:
    - 8080:8080
